@@ -1,6 +1,6 @@
 const express = require("express");
 const errorHandler = require("./handlers/errorHandler.js");
-const db = require("./config/db.js");
+require("./config/db.js");
 const userRoute = require("./modules/users/users.routes.js");
 const transactionRoute = require("./modules/transactions/transactions.routes.js");
 
