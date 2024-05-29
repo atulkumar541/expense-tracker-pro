@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
+
 //Mongoose connection
-mongoose.connect(process.env.LIVE_DB);
+mongoose.connect(
+  "mongodb+srv://chaturvediatulkumar541:Atulkumar@0541#@expense-tracker-pro.xuhmzlp.mongodb.net/?retryWrites=true&w=majority&appName=expense-tracker-pro"
+);
 
 const db = mongoose.connection;
 
